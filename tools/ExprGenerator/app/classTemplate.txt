@@ -1,0 +1,15 @@
+package {packageName};
+import jlox.lexer.Token;
+import java.util.List;
+
+public abstract class {className} {
+    public interface Visitor<R> {
+        {visitorInterfaceMethods}
+    }
+
+    public abstract <R> R accept(Visitor<R> visitor);
+
+    {subClassListings}
+}
+
+

@@ -1,0 +1,12 @@
+public static class {subClassName} extends {className} {
+    {subClassPropertyList}
+
+    public {subClassName}({constructorParameterList}) {
+        {subClassPropertyInitList}
+    }
+
+    @Override
+    public <R> R accept(Visitor<R> visitor) {
+      return visitor.visit{subClassName}{className}(this);
+    }
+}
